@@ -10,7 +10,10 @@ function Produce(){
   <nav class="navbar">
     <ul>
       <li>
-        <Link to="/">Product</Link>
+        <Link to="/">Home</Link>
+      </li>
+      <li>
+        <Link to="#">Product</Link>
       </li>
       <li>
         <Link to="./contact">ContactUs</Link>
