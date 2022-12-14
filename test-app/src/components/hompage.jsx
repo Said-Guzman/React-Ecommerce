@@ -1,31 +1,43 @@
 import React from "react"
 import {Link} from "react-router-dom"
-
+import "./homepage.css"
 
 
 function Homage(){
     return(  <>
-        <nav class="navbar">
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="./product">Product</Link>
-            </li>
-            <li>
-              <Link to="./contact">ContactUs</Link>
-            </li>
-          </ul>
-        </nav>
+  <header>
+    <nav class="navbar">
+    <Link to="./product" class="logo">exe.Sliced</Link>
+    <ul class="nav-menu">
+    <li class="nav-item">
+          <Link to="/">Home</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="./product">Product</Link>
+        </li>
+        <li class="nav-item">
+          <Link to="./contact">ContactUs</Link>
+        </li>
+      </ul>
+
+
+      <div class="dropdown">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      </div>
+
+
+
+    </nav>
+    </header>
+
+
       <body>
-        <h1>Produce page</h1>
-        <h2>sample text</h2>
+
         </body>
         <footer>
           
-        
-        <h1>test</h1>
         
         
         </footer>

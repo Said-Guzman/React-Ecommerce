@@ -16,7 +16,7 @@ function Produce(){
         <Link to="#">Product</Link>
       </li>
       <li>
-        <Link to="./contact">ContactUs</Link>
+        <Link to="/contact">ContactUs</Link>
       </li>
     </ul>
   </nav>

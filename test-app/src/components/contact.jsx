@@ -9,10 +9,10 @@ function ContactUs(){
 <nav class="navbar">
 <ul>
     <li>
-        <Link to="/">Homeg</Link>
+        <Link to="/">Home</Link>
     </li>
     <li>
-    <Link to="./product">Product</Link>
+    <Link to="/product">Product</Link>
     </li>
     <li>
     <Link to="#">ContactUs</Link>
