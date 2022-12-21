@@ -1,4 +1,242 @@
-
+HTML, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #300350;
+  }
+  
+  header{
+  background-color: #300350;
+  }
+  
+  li{
+  list-style: none;
+  }
+  
+  a{
+  color: #E93479;
+  text-decoration: none;
+  }
+  
+  .navbar{
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  }
+  
+  .nav-menu{
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  gap: 90px;
+  font-size: 20px;
+  }
+  
+  .logo{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: 0.5s ease;
+  }
+  
+  
+  
+  .nav-link{
+  transition: 0.5s ease;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 15px #F9AC53;
+  }
+  
+  
+  
+  
+  
+  .dropdown{
+  display: none ;
+  cursor: pointer;
+  }
+  
+  .bar{
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 3.5px;
+  -webkit-transition: all 0.3s ease-in-out ;
+  transition: all 0.3s ease-in-out ;
+  background-color: #F9AC53;
+  }
+  
+  @media(max-width:750px){
+  .dropdown{
+    display: block;
+  }
+  
+  .dropdown.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+  }
+  .dropdown.active .bar:nth-child(2){
+  opacity: 0;
+  }
+  
+  .dropdown.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-menu{
+  position:fixed;
+  left: -200% ;
+  top:30px;
+  gap: 0;
+  flex-direction: column;
+  background-color: aqua;
+  width: 100%;
+  text-align: center;
+  background-color: #300350;
+  transition: 0.5s;
+  }
+  
+  
+  .nav-item{
+  margin: 10px;
+  }
+  
+  .nav-menu.active{
+  left: -5%;
+  }
+  
+  }
+  
+  .hi{
+    text-align: center;
+  }
+  
+  
+  
+  .selling{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px;
+  color: #F9AC53;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  /* video{
+  border-radius: 15px;
+  }
+  
+  video:hover{
+  transform: scale(1.1);
+  transition: ease-in-out .5s;
+  } */
+  
+  h1{
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px -1px #E93479;
+  }
+  
+  p{
+  font-size: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px -1px #E93479;
+  }
+  
+  
+  
+  
+  
+  
+  
+  button{
+  font-size: 40px;
+  background-color: #94167F;
+  color: #F9AC53;
+  cursor: pointer;
+  border-radius: 10px;
+  }
+  
+  button:hover{
+  animation-name: breath;
+  animation-duration: .9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  }
+  
+  @keyframes breath{
+  0% {background-color: #F62E97;}
+  100% {background-color: #94167F;}
+  }
+  
+  
+  
+  @media(max-width:1450px){
+  .selling{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    transition: ease 1s;
+  }
+  .product-content{
+    margin: -20px;
+  }
+  button{
+    margin-bottom: 30px;
+  }
+  .side-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    transition: ease 1s;
+  }
+  .side-content2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    transition: ease 1s;
+  }
+  }
+  
+  
+  
+  /* organize everything more simply */
+  .side-content{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  color: #F9AC53;
+  justify-content: space-around;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .side-content2{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    color: #F9AC53;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  
+  
+  
+  footer{
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #300350;
+  text-shadow: 1px -1px #F9AC53;
+  
+  }
 
 
 

@@ -1,28 +1,37 @@
 import {Link} from "react-router-dom"
 import React from "react"
-
 import './product.css'
 
 
 function Produce(){
+
+
+  function refreshPage(){
+    window.location.reload(false)
+  }
+
    return (
   <>
+  <header>
+ 
   <nav class="navbar">
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
+     <Link to="/" onClick={refreshPage} class="logo">exe.Sliced</Link>
+    <ul className="nav-menu">
+      <li className="nav-item">
+        <Link className="nav-link" to="/">Home</Link>
       </li>
-      <li>
-        <Link to="#">Product</Link>
+      <li className="nav-item">
+        <Link className="nav-link" to="#">Product</Link>
       </li>
-      <li>
-        <Link to="/contact">ContactUs</Link>
+      <li className="nav-item">
+        <Link className="nav-link" to="/contact">ContactUs</Link>
       </li>
     </ul>
   </nav>
+</header>
 <body>
-  <h1>Produce page</h1>
-  <h2>sample text</h2>
+  
+  
   </body>
   <footer>
     

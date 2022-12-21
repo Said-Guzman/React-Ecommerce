@@ -14,11 +14,6 @@ li{
   list-style: none;
 }
 
-a{
-  color: #E93479;
-  text-decoration: none;
-}
-
 .navbar{
   min-height: 50px;
   display: flex;
@@ -39,39 +34,23 @@ a{
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transition: 0.5s ease;
-  animation-name: logo;
-  animation-duration: 5s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
-}
-
-@keyframes logo{
-0% {color: #6307a5;}
-25% {color: #94167F;}
-50% {color:#F62E97 ;}
-75% {color:#153CB4 ;}
-100%{color:#F9AC53;}
+  animation: grad 3s infinite linear;
+  text-shadow: 2px -1px black, 0 0 20px cyan;
+color: aqua;
 
 }
+
 
 .nav-link{
   transition: 0.5s ease;
-  animation-name: link;
-  animation-duration: 5s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
+  
   font-size: 25px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  animation: lightbulb 9s infinite linear;
+
+  
 }
 
-
-@keyframes link{
-  0% {color: #6307a5;}
-  25% {color: #94167F;}
-  50% {color:#F62E97 ;}
-  75% {color:#153CB4 ;}
-  100%{color:#F9AC53;}
-  }
 
 
 .dropdown{
@@ -153,11 +132,19 @@ z-index: 999;
   transform: translate(-50%, -50%);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   transition: ease .5s;
-  text-shadow: 2px -2px darkcyan;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+}
+
+
+#logo-middle{
+animation: grad 3s infinite linear;
+text-shadow: 3px -1px black, 0 0  30px cyan;
+color: aqua;
+
+
 }
 
 
@@ -167,23 +154,22 @@ h1{
   padding:2px;
   margin: 0%;
   font-size: 50px;
-  animation: glow 5s ease-in-out infinite alternate;
+  
 }
 /* cool animations */
-@keyframes glow{
-  
-  0% {color: #6307a5;}
-  25% {color: #94167F;}
-  50% {color:#F62E97 ;}
-  75% {color:#153CB4 ;}
-  100%{color:#F9AC53;}
+@keyframes grad{
+  0% {filter: hue-rotate(0deg);}
+  100%{filter: hue-rotate(360deg);}
 }
+
+
 
 p{
   font-size: 40px;
   border-radius: 2px;
   margin: 0%;
-  color: violet;
+  color: #F62E97;
+  text-shadow: 1px -1px 15px #F9AC53, 1px -1px 0 black;
 }
 
 button{
@@ -192,7 +178,8 @@ button{
   padding: 1px;
   background-color: transparent;
   color: red;
-  
+  text-shadow: 2px -1px black;
+  box-shadow: 6px 6px 20px black;
 }
 
 /* hover effect */
@@ -208,6 +195,7 @@ button:hover{
   transition: ease .5s;
   cursor: pointer;
   animation: glowbtn 1s ease-in-out infinite alternate-reverse;
+  box-shadow: 0 0 0 transparent;
 }
 
 @keyframes glowbtn{
@@ -259,9 +247,9 @@ button:hover{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 50px;
   color: #F62E97;
-  text-shadow: 2px -1px darkcyan;
+  text-shadow: 2px -1px #F9AC53;
+  animation: lightbulb 8s infinite linear;
 }
-
 
 
 
@@ -295,5 +283,6 @@ footer{
   display: flex;
   justify-content: space-evenly;
   background-color: #300350;
+  animation: lightbulb 9s infinite linear;
 
 }

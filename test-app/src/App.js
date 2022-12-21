@@ -7,19 +7,33 @@ import Homage from "./components/hompage"
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-       
-        <Route path="/" element={<Homage />}>
-          </Route>
-          <Route path="/product" element={<Produce />}></Route>
-          <Route path="/contact" element={<ContactUs />}>
-         </Route>
-       
-      </Routes>
-    </BrowserRouter>
-  );
-}
+  <BrowserRouter>
+    <Routes>
+      
+    <Route path="/" element={<Homage />}></Route>
+    <Route path="/product" element={<Produce />}></Route>
+    <Route path="/contact" element={<ContactUs />}> </Route>
+      
+      
+    </Routes>
+  </BrowserRouter>
+)};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<App />);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

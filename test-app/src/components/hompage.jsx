@@ -1,14 +1,19 @@
-import React from "react"
-import {Link} from "react-router-dom"
-import "./homepage.css"
+import React from "react";
+import {Link} from "react-router-dom";
+import "./homepage.css";
 // import "./dropdown.js"
-
+import {Navigation, Pagination, Scrollbar, A11y, Keyboard} from 'swiper';
+import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css/bundle';
 
 
 
 
 
 function Homage(){
+
+
+
 
 function refreshPage(){
   window.location.reload(false)
@@ -22,18 +27,18 @@ function refreshPage(){
           <ul class="nav-menu">
 
             <li class="nav-item">
-              <Link to="/" onClick={refreshPage}>Home</Link>
+              <Link to="/" className="nav-link" onClick={refreshPage}>Home</Link>
             </li>
             <li class="nav-item">
-              <Link to="./product">Product</Link>
+              <Link to="./product" className="nav-link" >Product</Link>
             </li>
             <li class="nav-item">
-              <Link to="./contact">ContactUs</Link>
+              <Link to="./contact" className="nav-link" >ContactUs</Link>
             </li>
           </ul>
 
 
-          <div class="dropdown">
+          <div class="dropdown" >
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
@@ -43,59 +48,38 @@ function refreshPage(){
       
       <body>
         <div class="hi">
-          <video loop muted autoplay preload="auto"></video>
-          {/* <source src="/videos/color.mp4" type="video/mp4" id="vid"></source>*/}
+
+<video autoPlay muted loop src='/videos/color.mp4' type="video/mp4"></video>
+
           <div class="ht">
-            <Link to="//"><h1 id="logo-middle">exe.Sliced</h1></Link>
+            <Link to="/" onClick={refreshPage}><h1 id="logo-middle">exe.Sliced</h1></Link>
             <br />
             <p id="middle-text">Welcome to the place to get your videos Sliced professionally.</p>
             <br />
-            <a href="/pages/product.html"><button>Buy Here</button></a>
+            <a href="./product"><button>Buy Here</button></a>
           </div>
         </div>
 {/* ------------------------------------------------------------------------------------ */}
-        <div><h2 id="slider"> Professional Video Projects (Commissioned)</h2></div>
+        <div><h2 id="slider">Some Examples Of My Work</h2></div>
         <div id="container">
           {/* <!-- Slider main container --> */}
-          <div class="swiper">
-            {/* <!-- Additional required wrapper --> */}
-            <div class="swiper-wrapper">
-              {/* <!-- Slides --> */}
-              <div class="swiper-slide"><iframe width="560" height="815" src="https://www.youtube.com/embed/gyMEx4pru8E?start=133" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-              <div class="swiper-slide"><iframe width="560" height="815" src="https://www.youtube.com/embed/US0ZNaeIw0Q?start=83" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-              <div class="swiper-slide"><iframe width="560" height="815" src="https://www.youtube.com/embed/uf0vuyohi5w?start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            {/* <!-- If we need pagination --> */}
-            <div class="swiper-pagination"></div>
-            {/* <!-- If we need navigation buttons --> */}
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+          <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
+      spaceBetween={50}
+      slidesPerView={1}
+      Navigation
+      keyboard = {{enabled: true, onlyInViewport: false,}}
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/Ji7TiVkq9fA" title="SpiderVerse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/ViIYwhgxBNg" title="I Love You So - AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/c1HvnTlP7ns" title="Chrome Beretta - Practice AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/IsQ9rGZMSxo" title="Dancing X Lights Edit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+    </Swiper>
           </div>
-        </div>
-      
-      {/* --------------------------------------------------------------- */}
-      <br />
-      <div><h2 id="slider">Commissioned Projects</h2></div>
-      <br />
-        <div id="container">
-          {/* <!-- Slider main container --> */}
-          <div class="swiper">
-            {/* <!-- Additional required wrapper --> */}
-            <div class="swiper-wrapper">
-              {/* <!-- Slides --> */}
-              <div class="swiper-slide"><iframe width="560" height="815" src="https://www.youtube.com/embed/IsQ9rGZMSxo?start=76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-              <div class="swiper-slide"><iframe width="560" height="815" src="https://www.youtube.com/embed/GA80CN3s384?start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-              <div class="swiper-slide"><iframe width="560" height="815" src="https://www.youtube.com/embed/GL66yJQKrns?start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            </div>
-            {/* <!-- If we need pagination --> */}
-            <div class="swiper-pagination"></div>
-
-            {/* <!-- If we need navigation buttons --> */}
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>
-      
       </body>    
       <footer>
         <Link to="https://twitter.com/" class="fa fa-twitter"></Link>
