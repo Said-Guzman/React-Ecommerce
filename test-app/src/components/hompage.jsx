@@ -74,10 +74,10 @@ function refreshPage(){
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
-      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/Ji7TiVkq9fA" title="SpiderVerse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
-      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/ViIYwhgxBNg" title="I Love You So - AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
-      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/c1HvnTlP7ns" title="Chrome Beretta - Practice AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
-      <SwiperSlide><iframe width="1440" height="600" src="https://www.youtube.com/embed/uf0vuyohi5w" title="Toyota Supra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/Ji7TiVkq9fA" title="SpiderVerse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/ViIYwhgxBNg" title="I Love You So - AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/c1HvnTlP7ns" title="Chrome Beretta - Practice AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/uf0vuyohi5w" title="Toyota Supra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
     </Swiper>
           </div>
       </body>    
