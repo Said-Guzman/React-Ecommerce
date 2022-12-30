@@ -3,19 +3,32 @@ import React from "react"
 import './product.css'
 
 
-function Produce(){
+
+class Produce extends React.Component {
 
 
-  function refreshPage(){
-    window.location.reload(false)
+  // function refreshPage(){
+  //   window.location.reload(false)
+  // }
+
+
+  state = {
+    name: ""
   }
 
-   return (
+  componentDidMount() {
+    fetch("http://localhost:3000")
+      .then(res => res.json())
+      .then(data => this.setState({ name: data.name }))
+  }
+
+  render(){
+   return(
   <>
   <header>
  
   <nav class="navbar">
-     <Link to="/" onClick={refreshPage} class="logo">exe.Sliced</Link>
+     <Link to="/"  class="logo">exe.Sliced</Link>
     <ul className="nav-menu">
       <li className="nav-item">
         <Link className="nav-link" to="/">Home</Link>
@@ -30,7 +43,7 @@ function Produce(){
   </nav>
 </header>
 <body>
-  
+   <h3>Hello {this.state.name}!</h3>
   
   </body>
   <footer>
@@ -40,5 +53,5 @@ function Produce(){
     
    )
 }
-
+}
 export default Produce
