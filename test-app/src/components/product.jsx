@@ -13,13 +13,13 @@ class Produce extends React.Component {
 
 
   state = {
-    name: ""
+    name: "bruh"
   }
 
   componentDidMount() {
     fetch("http://localhost:3000")
       .then(res => res.json())
-      .then(data => this.setState({ name: data.name }))
+      .then(data => this.setState({}))
   }
 
   render(){
@@ -43,7 +43,7 @@ class Produce extends React.Component {
   </nav>
 </header>
 <body>
-   <h3>Hello {this.state.name}!</h3>
+   <h3>{this.state.name}</h3>
   
   </body>
   <footer>

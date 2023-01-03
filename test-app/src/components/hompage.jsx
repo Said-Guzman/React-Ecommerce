@@ -76,7 +76,7 @@ function refreshPage(){
     >
       <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/Ji7TiVkq9fA" title="SpiderVerse" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
       <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/ViIYwhgxBNg" title="I Love You So - AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
-      <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/c1HvnTlP7ns" title="Chrome Beretta - Practice AMV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
+      <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/yGWX30idkiw?start=92" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
       <SwiperSlide><iframe width="1440" height="900" src="https://www.youtube.com/embed/uf0vuyohi5w" title="Toyota Supra" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></SwiperSlide>
     </Swiper>
           </div>
@@ -90,7 +90,6 @@ function refreshPage(){
         </>
     )
 }
-
 
 
 

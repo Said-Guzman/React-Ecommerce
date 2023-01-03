@@ -1,15 +1,15 @@
 const express = require("express")
 const app = express()
 const cors = require("cors")
-
-
-
-
-
 app.use(cors())
+const path = require('path')
+
+
+
+
 
 app.get("/", function(req, res) {
-  res.send("It's working!")
+  res.sendFile(path.normalize(__dirname + "/produce.json"))
 })
 
 app.listen(3001, () => {

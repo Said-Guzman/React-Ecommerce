@@ -1,0 +1,23 @@
+{
+    "info":[
+    {
+    "name": "Editing Pack 1",
+    "price" : "$25",
+    "video": "/videos/packs.mp4",
+    "description" : "Shake Pack"
+    },
+    {
+    
+    "name": "Editing Pack 2",
+    "price" : "$30",
+    "video": "/videos/packs_1.mp4",
+    "description" : "Font Pack"
+    },
+    {
+    
+    "name": "Editing Pack 3",
+    "price" : "$40",
+    "video":"/videos/packs_2.mp4",
+    "description" : "Overlay Pack"
+    }
+]}
