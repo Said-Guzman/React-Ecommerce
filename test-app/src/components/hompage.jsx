@@ -48,9 +48,9 @@ function refreshPage(){
       
       <body>
         <div class="hi">
-
-<video autoPlay muted loop src='/videos/fixedhero.mp4' type="video/mp4"></video>
-
+{/* edited the video twice to accomidate for people with epilepsy definitly worth it since it hurt my eyes*/}
+<video autoPlay muted loop src='/videos/hero.mp4' type="video/mp4"></video>
+ 
           <div class="ht">
             <Link to="/" onClick={refreshPage}><h1 id="logo-middle">exe.Sliced</h1></Link>
             <br />
