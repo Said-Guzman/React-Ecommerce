@@ -10,15 +10,7 @@ function Produce(){
   //   window.location.reload(false)
   // }
 
-  const [data, setData] = React.useState();
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => {setData(data.message)
-        console.log(data.message)});
-      
-  }, []);
 
    return(
   <>
@@ -41,7 +33,7 @@ function Produce(){
 </header>
 <body>
   
-  <p>{}</p>
+ 
   </body>
   <footer>
      {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
