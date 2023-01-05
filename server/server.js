@@ -7,7 +7,8 @@ const db = mysql.createConnection({
 host:"127.0.0.1",
 user:"root",
 password:"password",
-database:"reactdb"
+database:"reactdb",
+port: 3306
 })
 
 app.get("/", (req,res)=>{
@@ -26,12 +27,11 @@ db.connect((err)=>{
     }
 })
 
-
 app.get("/product", (req,res)=>{
-    const q = "SELECT * FROM produce"
-    db.query(q, (err,data)=>{
-        if(err) return res.json(err)
-        return
+    const q = "SELECT * FROM produce;"
+    db.query(q, (err,results, fields)=>{
+        if(err) return err;
+        res.send(results);
     })
 })
 
@@ -39,6 +39,12 @@ app.get("/product", (req,res)=>{
 app.listen(4000, ()=> {
     console.log("Connected to backend")
 })
+
+
+
+
+
+
 
 
 
