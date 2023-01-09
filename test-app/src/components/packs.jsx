@@ -17,41 +17,47 @@ export default function Packs() {
   
     return (
     <>
-            <div>
+           <div>
         <video autoPlay muted loop src='/videos/packs.mp4' type="video/mp4"></video>
         <h3>{post[3].name}</h3>
         <p>{post[3].description}</p>
         <p>{post[3].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
         <video autoPlay muted loop src='/videos/packs_1.mp4' type="video/mp4"></video>
         <h3>{post[4].name}</h3>
         <p>{post[4].description}</p>
         <p>{post[4].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
         <video autoPlay muted loop src='/videos/packs_2.mp4' type="video/mp4"></video>
         <h3>{post[5].name}</h3>
         <p>{post[5].description}</p>
         <p>{post[5].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
         <video autoPlay muted loop src='/videos/packs_3.mp4' type="video/mp4"></video>
         <h3>{post[6].name}</h3>
         <p>{post[6].description}</p>
         <p>{post[6].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
         <video autoPlay muted loop src='/videos/packs_4.mp4' type="video/mp4"></video>
         <h3>{post[7].name}</h3>
         <p>{post[7].description}</p>
         <p>{post[7].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
         <video autoPlay muted loop src='/videos/packs_5.mp4' type="video/mp4"></video>
         <h3>{post[8].name}</h3>
         <p>{post[8].description}</p>
         <p>{post[8].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         
     </>

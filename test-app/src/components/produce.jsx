@@ -17,17 +17,19 @@ export default function Producing() {
     return (
     <>
 
-        <div>
+<div>
         <img src='/images/exe.webp' alt='Nice looking sweater'/>
         <h3>{post[9].name}</h3>
         <p>{post[9].description}</p>
         <p>{post[9].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
         <img src='/images/exe-sticker.webp' alt='cool stickers for anything'/>
         <h3>{post[10].name}</h3>
         <p>{post[10].description}</p>
         <p>{post[10].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         <br></br>
         </div>
         
@@ -36,6 +38,7 @@ export default function Producing() {
         <h3>{post[11].name}</h3>
         <p>{post[11].description}</p>
         <p>{post[11].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
     </>
     );

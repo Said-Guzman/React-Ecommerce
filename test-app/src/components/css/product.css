@@ -41,8 +41,6 @@ HTML, body{
   transition: 0.5s ease;
   }
   
-  
-  
   .nav-link{
   transition: 0.5s ease;
   font-size: 25px;
@@ -50,23 +48,9 @@ HTML, body{
   text-shadow: 2px 2px 15px #F9AC53;
   }
   
-  
-  
-  
-  
   .dropdown{
   display: none ;
   cursor: pointer;
-  }
-  
-  .bar{
-  display: block;
-  width: 35px;
-  height: 5px;
-  margin: 3.5px;
-  -webkit-transition: all 0.3s ease-in-out ;
-  transition: all 0.3s ease-in-out ;
-  background-color: #F9AC53;
   }
   
   @media(max-width:750px){
@@ -112,9 +96,7 @@ HTML, body{
   .hi{
     text-align: center;
   }
-  
-  
-  
+
   .selling{
   display: flex;
   align-items: stretch;
@@ -126,6 +108,7 @@ HTML, body{
   color: #F9AC53;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+
   .selling-alt{
     display: flex;
     align-items: stretch;
@@ -137,14 +120,13 @@ HTML, body{
     color: #F9AC53;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-  /* video{
-  border-radius: 15px;
+ 
+  .repair{
+    width: 550px;
   }
-  video:hover{
-  transform: scale(1.1);
-  transition: ease-in-out .5s;
-  } */
-  
+  .repair-2{
+    width: 700px;
+  }
   h3{
   font-size: 40px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -162,15 +144,14 @@ HTML, body{
     width: 400px;
   }
   
-  
-  
-  
+
   button{
   font-size: 40px;
   background-color: #94167F;
   color: #F9AC53;
   cursor: pointer;
   border-radius: 10px;
+  
   }
   
   button:hover{
@@ -213,31 +194,6 @@ HTML, body{
     transition: ease 1s;
   }
   }
-  
-  
-  
-  /* organize everything more simply */
-  .side-content{
-  display: flex;
-  flex-direction:row;
-  justify-content: center;
-  text-align: center;
-  margin: 20px;
-  color: #F9AC53;
-  justify-content: space-around;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-  .side-content2{
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    text-align: center;
-    margin: 20px;
-    color: #F9AC53;
-    justify-content: space-around;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
   
   
   
