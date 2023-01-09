@@ -1,9 +1,8 @@
-
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Produce from "./components/product";
-import ContactUs from "./components/contact";
-import Homage from "./components/hompage"
+import Produce from "./components/pages/product";
+import ContactUs from "./components/pages/contact";
+import Homage from "./components/pages/hompage"
 
 export default function App() {
   return (

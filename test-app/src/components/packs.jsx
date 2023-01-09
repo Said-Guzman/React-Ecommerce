@@ -3,7 +3,8 @@ import axios from 'axios';
 
 
 
-export default function Items() {
+
+export default function Packs() {
     const [post, setPost] = React.useState(null);
   
     React.useEffect(() => {
@@ -16,25 +17,7 @@ export default function Items() {
   
     return (
     <>
-      <div>
-      <video autoPlay muted loop src='/videos/sky.mp4' type="video/mp4"></video>
-        <h3>{post[0].name}</h3>
-        <p>{post[0].description}</p>
-        <p>{post[0].price}</p>
-        </div>
-        <div>
-        <video autoPlay muted loop src='/videos/sky_1.mp4' type="video/mp4"></video>
-        <h3>{post[1].name}</h3>
-        <p>{post[1].description}</p>
-        <p>{post[1].price}</p>
-        </div>
-        <div>
-        <video autoPlay muted loop src='/videos/sky_2.mp4' type="video/mp4"></video>
-        <h3>{post[2].name}</h3>
-        <p className='post2'>{post[2].description}</p>
-        <p >{post[2].price}</p>
-        </div>
-        <div>
+            <div>
         <video autoPlay muted loop src='/videos/packs.mp4' type="video/mp4"></video>
         <h3>{post[3].name}</h3>
         <p>{post[3].description}</p>
@@ -70,29 +53,7 @@ export default function Items() {
         <p>{post[8].description}</p>
         <p>{post[8].price}</p>
         </div>
-        <div>
-        <img src='/images/exe.webp' alt='Nice looking sweater'/>
-        <h3>{post[9].name}</h3>
-        <p>{post[9].description}</p>
-        <p>{post[9].price}</p>
-        </div>
-        <div>
-        <img src='/images/exe-sticker.webp' alt='cool stickers for anything'/>
-        <h3>{post[10].name}</h3>
-        <p>{post[10].description}</p>
-        <p>{post[10].price}</p>
-        <br></br>
-        </div>
         
-        <div>
-        <img src='/images/exe-blanket.webp' alt='the best sweater out there'/>
-        <h3>{post[11].name}</h3>
-        <p>{post[11].description}</p>
-        <p>{post[11].price}</p>
-        </div>
     </>
     );
   }
-
-
-

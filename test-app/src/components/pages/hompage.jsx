@@ -1,18 +1,16 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import "./homepage.css";
+import "./../css/homepage.css";
 // import "./dropdown.js"
 import {Navigation, Pagination, Scrollbar, A11y, Keyboard} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css/bundle';
-
+import Drop from "../dropdown";
 
 
 
 
 function Homage(){
-
-
 
 
 function refreshPage(){
@@ -37,12 +35,8 @@ function refreshPage(){
             </li>
           </ul>
 
-
-          <div class="dropdown" >
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+        <Drop />
+          
         </nav>
       </header>
       
@@ -56,7 +50,7 @@ function refreshPage(){
             <br />
             <p id="middle-text">Welcome to the place to get your videos Sliced professionally.</p>
             <br />
-            <a href="./product"><button>Buy Here</button></a>
+            <a href="./product"><button className="middle-button">Buy Here</button></a>
           </div>
         </div>
 {/* ------------------------------------------------------------------------------------ */}
@@ -87,7 +81,7 @@ function refreshPage(){
         {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiFi9fb7NT6AhWBGVkFHfRlA64QFnoECA8QAQ&url=https%3A%2F%2Fwww.facebook.com%2F&usg=AOvVaw2q27ov2cpCynr72DmuSqEz" target="_blank" rel="noreferrer" class="fa fa-facebook"></a>
         {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
-        <a href="https://www.google.com/search?q=instagram&client=opera&hs=pK9&ei=1qJDY4XIH4Gz5NoP9MuN8Ao&oq=ins&gs_lcp=Cgdnd3Mtd2l6EAEYADIKCAAQsQMQgwEQQzIRCC4QgAQQsQMQgwEQxwEQ0QMyBAgAEEMyBAguEEMyBAgAEEMyBAgAEEMyCggAELEDEIMBEEMyCwguEIAEEMcBENEDMgoIABCxAxCDARBDMggIABCABBCxAzoICC4QjwEQ6gI6CAgAEI8BEOoCOgsIABCABBCxAxCDAToFCAAQgAQ6CAgAELEDEIMBOggILhCxAxCDAUoECEEYAEoECEYYAFAAWKgLYLkYaAFwAXgAgAFbiAH0AZIBATOYAQCgAQGwAQrAAQE&sclient=gws-wiz" target="_blank" rel="noreferrer" class="fa fa-instagram"></a>
+        <a href="https://www.instagram.com/sem/campaign/emailsignup/?campaign_id=13530334509&extra_1=s|c|547348909654|e|instagram%20%27|&placement=&creative=547348909654&keyword=instagram%20%27&partner_id=googlesem&extra_2=campaignid%3D13530334509%26adgroupid%3D126262421974%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1321618851291%26loc_physical_ms%3D1021064%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiA8OmdBhAgEiwAShr40-710SV5kPPb1EhdQueGS-g91DlImHaPryn9hbLSpobqaz3hcSpAlRoCyW8QAvD_BwE" target="_blank" rel="noreferrer" class="fa fa-instagram"></a>
          {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
         <a href="https://www.youtube.com/channel/UCboY9iaF3O_1hdBuWDK2rqg" class="fa fa-youtube" rel="noreferrer" />
     </footer>

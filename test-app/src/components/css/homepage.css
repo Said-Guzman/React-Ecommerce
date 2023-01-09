@@ -107,7 +107,7 @@ color: aqua;
 
 .nav-menu.active{
 left: -5%;
-z-index: 999;
+z-index: 998;
 }
 
 }
@@ -175,7 +175,7 @@ p{
 .post2{
   font-size: 33px;
 }
-button{
+.middle-button{
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 1px;
@@ -193,7 +193,7 @@ h1:hover{
 
 }
 
-button:hover{
+.middle-button:hover{
   transform: scale(1.2);
   transition: ease .5s;
   cursor: pointer;
@@ -238,7 +238,7 @@ button:hover{
     
   }
 
-  button{
+  .middle-button{
     font-size: 20px;
   }
 

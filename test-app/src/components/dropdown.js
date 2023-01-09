@@ -1,10 +1,22 @@
+import Dropdown from 'react-bootstrap/Dropdown';
 
+function Drop() {
+  return (
+    <Dropdown>
+      <Dropdown.Toggle variant="success" id="dropdown-basic">
+       Menu
+      </Dropdown.Toggle>
 
-const dropdown = document.getElementsByClassName("dropdown") // looks for the dropdown class
-const navMenu = document.getElementsByClassName(".nav-menu") // looks for the nav-menu
+      <Dropdown.Menu>
+        <Dropdown.Item href='http://localhost:3000' className="nav-link">Home</Dropdown.Item>
+        <br />
+        <Dropdown.Item href='http://localhost:3000/product' className="nav-link">Product</Dropdown.Item>
+        <br />
+        <Dropdown.Item href='http://localhost:3000/contact' className="nav-link">Contact Us</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+}
 
- dropdown.addEventListener("click",() =>{
-    dropdown.classList.toggle("active")
-    navMenu.classList.toggle("active");
-    
-}) // onclick it'll toggle the active portion of the menu, activating the dropdown and navmmenu
+export default Drop;
+

@@ -126,6 +126,17 @@ HTML, body{
   color: #F9AC53;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+  .selling-alt{
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px;
+    color: #F9AC53;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
   /* video{
   border-radius: 15px;
   }
