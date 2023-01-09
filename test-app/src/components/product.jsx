@@ -1,18 +1,13 @@
-
 import {Link} from "react-router-dom"
 import React from "react"
 import './product.css'
+import Items from './items'
 
 
+class Produce extends React.Component{
 
-function Produce(){
-  // function refreshPage(){
-  //   window.location.reload(false)
-  // }
-
-
-
-   return(
+   render(){
+    return(
   <>
   <header>
  
@@ -32,8 +27,16 @@ function Produce(){
   </nav>
 </header>
 <body>
-  
- 
+
+
+
+
+<div className='selling'>
+  <Items />
+</div>
+
+
+
   </body>
   <footer>
      {/* eslint-disable-next-line jsx-a11y/anchor-has-content */}
@@ -46,8 +49,8 @@ function Produce(){
         <a href="https://www.youtube.com/channel/UCboY9iaF3O_1hdBuWDK2rqg" class="fa fa-youtube" rel="noreferrer" />
   </footer>
 </>
-    
-   )
+    )
+   }  
 }
 
 export default Produce

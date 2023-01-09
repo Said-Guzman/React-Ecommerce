@@ -172,7 +172,9 @@ p{
   color: #F62E97;
   text-shadow: 1px -1px 15px #F9AC53, 1px -1px 0 black;
 }
-
+.post2{
+  font-size: 33px;
+}
 button{
   font-size: 30px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

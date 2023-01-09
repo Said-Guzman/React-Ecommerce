@@ -117,6 +117,8 @@ HTML, body{
   
   .selling{
   display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
   flex-direction:row;
   justify-content: space-around;
   text-align: center;
@@ -127,7 +129,6 @@ HTML, body{
   /* video{
   border-radius: 15px;
   }
-  
   video:hover{
   transform: scale(1.1);
   transition: ease-in-out .5s;
@@ -146,7 +147,9 @@ HTML, body{
   }
   
   
-  
+  img{
+    width: 400px;
+  }
   
   
   
