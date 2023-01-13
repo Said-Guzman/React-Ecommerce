@@ -5,7 +5,7 @@ import axios from 'axios';
 
 export default function Items() {
     const [post, setPost] = React.useState(null);
-  
+  //Use effect to call my api to the call the products i want
     React.useEffect(() => {
       axios.get('http://localhost:4000/product').then((response) => {
         setPost(response.data);
@@ -13,7 +13,7 @@ export default function Items() {
     }, []);
   
     if (!post) return null;
-  
+  // my filter is different but i can use .map to lint to something specific but i took a different approach
     return (
     <>
       <div>

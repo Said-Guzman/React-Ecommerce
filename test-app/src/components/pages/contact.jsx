@@ -4,10 +4,6 @@ import './../css/contact.css'
 import Drop from "../dropdown";
 
 
-
-
-
-
 function ContactUs(){
 
     function refreshPage(){

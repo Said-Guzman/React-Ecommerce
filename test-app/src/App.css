@@ -1,19 +1,1 @@
-html,body{
-  width: 100%;
-  height: 100%;
-}
-.header{
-color: coral;
-text-align: center;
-}
-ul{
-  display: flex;
-  justify-content: space-around;
-}
-
-li a{
-  text-decoration: none;
-  
-}
-
 

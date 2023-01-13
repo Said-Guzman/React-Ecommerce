@@ -1,13 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./../css/homepage.css";
-// import "./dropdown.js"
 import {Navigation, Pagination, Scrollbar, A11y, Keyboard} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css/bundle';
 import Drop from "../dropdown";
-
-
 
 
 function Homage(){
@@ -34,7 +31,6 @@ function refreshPage(){
               <Link to="./contact" className="nav-link" >ContactUs</Link>
             </li>
           </ul>
-
         <Drop />
           
         </nav>
@@ -58,7 +54,7 @@ function refreshPage(){
         <div id="container">
           {/* <!-- Slider main container --> */}
           <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
+     modules={[Navigation, Pagination, Scrollbar, A11y, Keyboard]}
       spaceBetween={50}
       slidesPerView={1}
       Navigation

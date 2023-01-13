@@ -15,19 +15,19 @@ export default function HighValue() {
     if (!post) return null;
   
     return (
-    <>
-    <div>
-        <video className='repair-2' autoPlay muted loop src='/videos/music.mp4' type="video/mp4"></video>
-         <h3>{post[0].name}</h3>
-        <p>{post[0].description}</p>
-        <p>{post[0].price}</p>
-        <div class="icon"><button type="submit"> Buy Now</button> </div>
-        </div>
+    <>        
         <div>
         <video className='repair-2' autoPlay muted loop src='/videos/AMV-snippet.mp4' type="video/mp4"></video>
         <h3>{post[1].name}</h3>
         <p>{post[1].description}</p>
         <p>{post[1].price}</p>
+        <div class="icon"><button type="submit"> Buy Now</button> </div>
+        </div>
+         <div>
+        <video className='repair-2' autoPlay muted loop src='/videos/music.mp4' type="video/mp4"></video>
+         <h3>{post[0].name}</h3>
+        <p>{post[0].description}</p>
+        <p>{post[0].price}</p>
         <div class="icon"><button type="submit"> Buy Now</button> </div>
         </div>
         <div>
